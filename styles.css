@@ -1,0 +1,59 @@
+body {
+    font-family: sans-serif;
+}
+
+svg {
+    margin: auto;
+    display: block;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+}
+
+header {
+    p {
+        text-align: center;
+    }
+}
+
+footer {
+    text-align: center;
+    font-size: 0.9em;
+    p {
+        font-style: italic;
+    }
+}
+
+.circle {
+    stroke: #FFFFFF;
+    stroke-width: 0.5;
+    fill: #00A3E1;
+    &:hover {
+        stroke: #000000;
+    }
+}
+
+.tooltip {
+    opacity: 0;
+    position: absolute;
+    font-size: 0.9em;
+    padding: 0.6em 1em;
+    background: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    z-index: 10;
+    pointer-events: none;
+    line-height: 1.4em;
+}
+
+.tooltip:before {
+    content: '';
+}
+
+.tooltip-name {
+    font-size: 1.1em;
+    margin-bottom: 0.2em;
+    font-weight: 600;
+    line-height: 1.4em;
+}

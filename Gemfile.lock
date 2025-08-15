@@ -4,6 +4,8 @@ GEM
     Ascii85 (2.0.1)
     afm (1.0.0)
     bigdecimal (3.2.2)
+    countries (8.0.3)
+      unaccent (~> 0.3)
     csv (3.3.5)
     hashery (2.1.2)
     pdf-reader (2.15.0)
@@ -15,12 +17,14 @@ GEM
     ruby-rc4 (0.1.5)
     ttfunk (1.8.0)
       bigdecimal (~> 3.1)
+    unaccent (0.4.0)
 
 PLATFORMS
   ruby
   x86_64-linux
 
 DEPENDENCIES
+  countries (~> 8.0)
   csv (~> 3.3)
   pdf-reader (~> 2.15)
 

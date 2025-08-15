@@ -1,0 +1,51 @@
+country_name,country_code,count
+Afghanistan,AFG,1
+Albania,ALB,2
+Argentina,ARG,5
+Austria,AUT,2
+Belgium,BEL,1
+Belarus,BLR,8
+Bolivia,BOL,1
+Brazil,BRA,9
+Brunei Darussalam,BRN,7
+China,CHN,33
+Niue,NIU,1
+Colombia,COL,4
+Cyprus,CYP,1
+Czechia,CZE,1
+Dominican Republic,DOM,2
+Eritrea,ERI,3
+Spain,ESP,7
+Ethiopia,ETH,16
+France,FRA,11
+Georgia,GEO,1
+Hungary,HUN,1
+India,IND,127
+Iraq,IRQ,2
+Italy,ITA,19
+Jamaica,JAM,3
+Kazakhstan,KAZ,5
+Kenya,KEN,137
+South Korea,KOR,1
+Morocco,MAR,14
+Mexico,MEX,5
+New Zealand,NZL,2
+Pakistan,PAK,7
+Peru,PER,1
+Poland,POL,2
+Qatar,QAT,2
+Romania,ROU,6
+Russian Federation,RUS,60
+Rwanda,RWA,2
+Slovakia,SVK,2
+Syrian Arab Republic,SYR,1
+Thailand,THA,1
+Tajikistan,TJK,1
+Turkmenistan,TKM,1
+Tunisia,TUN,1
+Türkiye,TUR,19
+Uganda,UGA,4
+Ukraine,UKR,16
+United States,USA,12
+Uzbekistan,UZB,5
+Venezuela,VEN,1
