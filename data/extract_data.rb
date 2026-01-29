@@ -10,11 +10,12 @@ nationality_count = reader.pages.flat_map { |p| p.text.scan(/\b[A-Z]{3}\b/) }
                           .select { |code| VALID_COUNTRY_CODES.include?(code) }
                           .tally
 
-CSV.open('occurrence_per_nationality.csv', 'w', headers: %w[country_name country_code count],
+CSV.open('occurrence_per_nationality.csv', 'w', headers: %w[country_name country_code continent count],
                                                 write_headers: true) do |csv|
   nationality_count.each do |country_code, count|
     country = ISO3166::Country.find_country_by_alpha3(country_code)
     country_name = country.common_name
-    csv << [country_name, country_code, count]
+    continent = country.continent
+    csv << [country_name, country_code, continent, count]
   end
 end
