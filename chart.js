@@ -5,6 +5,9 @@ async function drawBubbleChart() {
     const countryCode = d => d.data.country_code;
     const occurenceCount = d => +d.count;
 
+    const continents = ["Asia", "Africa", "North America", "South America", "Europe", "Australia", "Antarctica"];
+    const continentColors = ["#FFC300", "#FF5733", "#33FF57", "#C733FF", "#3371FF", "#FF33A1", "#AAAAAA"];
+
     const width = 800;
     let dimensions = {
         width: width,
@@ -29,7 +32,6 @@ async function drawBubbleChart() {
         .attr("width", dimensions.width)
         .attr("height", dimensions.height)
 
-
     let bounds = wrapper.append("g")
         .attr("transform", `translate(${dimensions.margin.left},${dimensions.margin.top})`);
 
@@ -42,6 +44,10 @@ async function drawBubbleChart() {
         });
 
     wrapper.call(zoom);
+
+    const colorScale = d3.scaleOrdinal()
+        .domain(continents)
+        .range(continentColors);
 
     const pack = d3.pack()
         .size([dimensions.boundedWidth, dimensions.boundedHeight])
@@ -61,6 +67,7 @@ async function drawBubbleChart() {
     nodeGroup.append("circle")
         .attr("r", d => d.r)
         .attr("class", "circle")
+        .style("fill", d => colorScale(d.data.continent))
         .on("mouseenter", function(e, datum) {
             onMouseEnter(datum)
         })
@@ -94,5 +101,4 @@ async function drawBubbleChart() {
         tooltip.style("opacity", 0)
     }
 }
-
 drawBubbleChart();
