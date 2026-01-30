@@ -77,9 +77,8 @@ async function drawBubbleChart() {
     nodeGroup.append("text")
         .attr("text-anchor", "middle")
         .attr("dy", "0.3em")
-        .style("font-size", d => Math.min(d.r * 0.45, 14))
-        .style("fill", "#000000")
-        .text(d => countryCode(d))
+        .text(d => countryName(d))
+        .style("font-size", d => `${d.r * 0.2}px`)
 
     const legend = wrapper.append("g")
         .attr("id", "legend")
