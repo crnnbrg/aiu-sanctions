@@ -8,13 +8,13 @@ async function drawBubbleChart() {
     const continents = ["Asia", "Africa", "North America", "South America", "Europe", "Australia", "Antarctica"];
     const continentColors = ["#FFC300", "#FF5733", "#33FF57", "#C733FF", "#3371FF", "#FF33A1", "#AAAAAA"];
 
-    const width = 800;
+    const width = 1100;
     let dimensions = {
         width: width,
-        height: width,
+        height: width * 0.8,
         margin: {
             top: 40,
-            right: 40,
+            right: 200,
             bottom: 40,
             left: 40
         }
@@ -81,6 +81,26 @@ async function drawBubbleChart() {
         .style("fill", "#000000")
         .text(d => countryCode(d))
 
+    const legend = wrapper.append("g")
+        .attr("id", "legend")
+        .attr("transform", `translate(${dimensions.boundedWidth}, 0)`)
+
+    const legendItem = legend.selectAll("g")
+        .data(continents)
+        .join("g")
+        .attr("transform", (d, i) => `translate(0, ${i * 25})`);
+
+    legendItem.append("rect")
+        .attr("width", 18)
+        .attr("height", 18)
+        .attr("fill", colorScale);
+
+    legendItem.append("text")
+        .attr("x", 24)
+        .attr("y", 14)
+        .style("font-size", 12)
+        .text(d => d);
+
     const tooltip = d3.select("#tooltip")
         .attr("class", "tooltip")
 
@@ -102,3 +122,4 @@ async function drawBubbleChart() {
     }
 }
 drawBubbleChart();
+
