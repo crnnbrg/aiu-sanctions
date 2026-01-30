@@ -2,7 +2,7 @@ require 'pdf-reader'
 require 'csv'
 require 'countries'
 
-reader = PDF::Reader.new('Global-List-AUG_25.pdf')
+reader = PDF::Reader.new('Global-List-DEC_25.pdf')
 
 VALID_COUNTRY_CODES = ISO3166::Country.all.map(&:alpha3).freeze
 
