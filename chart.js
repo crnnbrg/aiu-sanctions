@@ -6,7 +6,7 @@ async function drawBubbleChart() {
     const occurenceCount = d => +d.count;
 
     const continents = ["Asia", "Africa", "North America", "South America", "Europe", "Australia", "Antarctica"];
-    const continentColors = ["#FFC300", "#FF5733", "#33FF57", "#C733FF", "#3371FF", "#FF33A1", "#AAAAAA"];
+    const continentColors = ["#FFC300", "#FF5733", "#33FF57", "#C733FF", "#6495ED", "#FF33A1", "#AAAAAA"];
 
     const width = 1100;
     let dimensions = {
