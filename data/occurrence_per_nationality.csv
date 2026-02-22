@@ -8,17 +8,17 @@ Italy,Europe,20
 Türkiye,Asia,19
 Ethiopia,Africa,17
 Ukraine,Europe,17
-United States,America,15
+United States,North America,15
 Morocco,Africa,13
 Kuwait,Asia,13
 Nigeria,Africa,11
 France,Europe,11
 Pakistan,Asia,8
-Brazil,America,8
+Brazil,South America,8
 Saudi Arabia,Asia,7
 Bahrain,Asia,6
-Argentina,America,5
-Mexico,America,5
+Argentina,South America,5
+Mexico,North America,5
 Iran,Asia,5
 Uganda,Africa,5
 Romania,Europe,5
@@ -29,31 +29,31 @@ Eritrea,Africa,4
 Greece,Europe,4
 Belarus,Europe,4
 Lesotho,Africa,4
-Colombia,America,3
+Colombia,South America,3
 Bulgaria,Europe,3
 Germany,Europe,3
 Kazakhstan,Asia,3
 Qatar,Asia,2
 United Arab Emirates,Asia,2
-Dominican Republic,America,2
+Dominican Republic,North America,2
 Albania,Europe,2
 New Zealand,Oceania,2
-Chile,America,2
+Chile,South America,2
 Slovakia,Europe,2
 Croatia,Europe,2
 Georgia,Asia,1
 Syria,Asia,1
-Ecuador,America,1
-Suriname,America,1
-Bolivia,America,1
-Costa Rica,America,1
+Ecuador,South America,1
+Suriname,South America,1
+Bolivia,South America,1
+Costa Rica,North America,1
 Afghanistan,Asia,1
 Netherlands,Europe,1
 Belgium,Europe,1
-Peru,America,1
+Peru,South America,1
 Mongolia,Asia,1
 Sudan,Africa,1
-Bahamas,America,1
+Bahamas,North America,1
 Algeria,Africa,1
 Cyprus,Asia,1
 Austria,Europe,1
@@ -61,13 +61,13 @@ Thailand,Asia,1
 South Korea,Asia,1
 Hungary,Europe,1
 Egypt,Africa,1
-Jamaica,America,1
+Jamaica,North America,1
 Tajikistan,Asia,1
-not found,not found,1
+not found,Unknown,1
 Sweden,Europe,1
 Tunisia,Africa,1
-Grenada,America,1
+Grenada,North America,1
 Denmark,Europe,1
 Rwanda,Africa,1
 Sri Lanka,Asia,1
-Uruguay,America,1
+Uruguay,South America,1
