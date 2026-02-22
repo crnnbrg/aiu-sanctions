@@ -1,9 +1,9 @@
 async function drawBubbleChart() {
     const dataset = await d3.csv("data/occurrence_per_nationality.csv")
 
-    const countryName = d => d.data.country_name;
-    const countryCode = d => d.data.country_code;
-    const occurenceCount = d => +d.count;
+    const countryName = d => d.data["Country Name"];
+    const continent = d => d.data.Continent;
+    const occurenceCount = d => +d.Count;
 
     const continents = ["Asia", "Africa", "North America", "South America", "Europe", "Australia", "Antarctica"];
     const continentColors = ["#FFC300", "#FF5733", "#33FF57", "#C733FF", "#6495ED", "#FF33A1", "#AAAAAA"];
@@ -67,7 +67,7 @@ async function drawBubbleChart() {
     nodeGroup.append("circle")
         .attr("r", d => d.r)
         .attr("class", "circle")
-        .style("fill", d => colorScale(d.data.continent))
+        .style("fill", d => colorScale(continent(d)))
         .on("mouseenter", function(e, datum) {
             onMouseEnter(datum)
         })
